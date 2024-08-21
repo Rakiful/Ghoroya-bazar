@@ -1,0 +1,82 @@
+
+.product-card {
+    width: 18rem;
+}
+
+.product-card img {
+    object-fit: cover;
+    aspect-ratio: 1/1; /* Ensures 1:1 aspect ratio */
+    width: 100%;
+    height: auto;
+}
+.product-card ,.card {
+    border: none !important;
+    margin: 0;
+}
+.product-card .product-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+.product-card .product-stock{
+    display: none;
+}
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-weight: bold;
+    color: green;
+}
+
+.rating i {
+    color: gold;
+}
+
+.order-btn {
+    width: 100%;
+}
+
+.product-card .card-text {
+    max-height: 80px; /* Set the maximum height for the text */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds max-height */
+    margin-bottom: 10px;
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+.product-card .card-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.product-card .card-text::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+.product-card .card-text::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track color */
+}
+
+/* Firefox */
+.product-card .card-text {
+    scrollbar-color: #007bff #f1f1f1; /* thumb color track color */
+    scrollbar-width: thin; /* Options: auto, thin */
+}
+
+.product-ex-img{
+    display: none;
+    
+}
+
+.order-btn{
+    background-color: #165c07;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+

@@ -1,0 +1,258 @@
+*{
+    /* font-family: "Tiro Bangla", serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+/* All common code  */
+.section-title{
+  margin-top: 50px;
+}
+.section-title hr{
+    width: 150px;
+    border: none;
+    border-top: 3px solid black;
+    background-color: black;
+    height: 3px;
+    margin: auto;
+    margin-bottom: 50px; 
+}
+
+
+/* Nabvar-section code  */
+.website-logo img{
+    width: 100px;
+    margin-right: 40px;
+}
+.nav-item{
+    color: black;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.navbar {
+    z-index: 1030;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* Slider-section code  */
+.custom-carousel .carousel-inner {
+    height: 100px;
+}
+
+.custom-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+/* Optional: Adjust button positioning */
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1020;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-section {
+    margin-top: 20px; /* Adjust based on your navbar height */
+}
+
+
+
+/* Category-section code  */
+.category-section{
+    margin: 50px 0px 50px 0px;
+}
+.category-item .card{
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.category-item-name{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -40px;
+}
+.category-link{
+    text-decoration: none;
+}
+
+
+/*Product Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #286d34;
+    border-radius: 10px;
+    width: 100%; /* Width of the modal content */
+    height: 100vh; /* Maximum height of the modal content */
+    overflow: auto; /* Enable scroll inside the modal if needed */
+    display: flex;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #286d34;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Main image and small images styles */
+
+  
+  .modal .main-image-box{
+    height: 400px;
+    width: 400px;
+  }
+  
+  .modal .main-image {
+    height: 400px;
+    width: 400px;
+  }
+  .modal .small-images {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 8px;
+    /* align-items: center; */
+  }
+  
+  .modal .image-box {
+    margin: 0px 8px 8px 0px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #286d34;
+    border-radius: 5px;
+  }
+  
+  .modal .image {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .modal .details-box {
+    /* width: 50%; */
+    padding-left: 30px;
+  }
+  
+  .modal .details-box h1 {
+    color: #286d34;
+  }
+  
+  .modal .inputs {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .modal .inputs td input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .modal .inputs td select {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .modal button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #286d34;
+    color: white;
+    margin-top: 14px;
+    cursor: pointer;
+  }
+  .modal button:hover {
+    background-color: darkgreen;
+  }
+
+
+
+/* footer-section css  */
+
+.footer-section{
+  background: #111723;
+  color: white;
+}
+.fd-footer{
+  margin-top: 50px;
+  padding: 100px;
+}
+.footer-section-content p{
+  color: #ABAEB5;
+  font-size: 15px;
+  width: 250px;
+}
+.footer-section-content h1{
+  font-size: 20px;
+  width: 250px;
+}
+.footer-section-content h3{
+  color: #555963;
+  font-size: 15px;
+}
+.footer-section-content img{
+  width: 140px;
+  margin-right: 20px;
+}
+.footer-first-content h1, .footer-first-content a{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-second-content ul{
+  list-style: none;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+.footer-second-content a{
+  text-decoration: none;
+  color: #555963;
+}
+
+.icons img{
+  width: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.subscriber-form input{
+  padding: 5px 20px;
+}

@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+    .custom-carousel .carousel-inner {
+        height: auto;
+    }
+
+    .custom-carousel .carousel-item img {
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .custom-carousel .carousel-inner {
+        height: 300px;
+    }
+
+    .custom-carousel .carousel-item img {
+        height: 300px;
+    }
+
+
+
+}
+@media (max-width: 480px) {
+    .custom-carousel .carousel-inner {
+        height: 200px;
+    }
+
+    .custom-carousel .carousel-item img {
+        height: 200px;
+        
+    }
+
+    .modal .main-image-box{
+        height: 300px;
+        width: 300px;
+      }
+      
+      .modal .main-image {
+        height: 300px;
+        width: 300px;
+      }
+
+      .modal .image-box {
+        margin: 0px 8px 8px 0px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid #286d34;
+        border-radius: 5px;
+      }
+}
