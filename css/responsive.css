@@ -6,6 +6,7 @@
     .custom-carousel .carousel-item img {
         height: auto;
     }
+
 }
 @media (max-width: 768px) {
     .custom-carousel .carousel-inner {
