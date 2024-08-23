@@ -8,17 +8,22 @@
   margin-top: 50px;
 }
 .section-title hr{
-    width: 150px;
-    border: none;
-    border-top: 3px solid black;
-    background-color: black;
-    height: 3px;
+    width: 150px !important;
+    border: 0 !important;
+    outline: 0 !important;
+    border: 3px solid red !important;
+    background-color: none !important;
+    height: 3px !important;
     margin: auto;
     margin-bottom: 50px; 
 }
 
 
 /* Nabvar-section code  */
+
+.navbar{
+  background-color: #f7ac93 !important;
+}
 .website-logo img{
     width: 100px;
     margin-right: 40px;
@@ -44,28 +49,50 @@
 
 
 /* Slider-section code  */
-.custom-carousel .carousel-inner {
-    height: 100px;
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.custom-carousel .carousel-item img {
-    height: 100%;
-    object-fit: cover;
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
-/* Optional: Adjust button positioning */
-.carousel-control-prev, .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
 }
-.carousel-control-prev,
-.carousel-control-next {
-    z-index: 1020;
-    top: 50%;
-    transform: translateY(-50%);
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-.slider-section {
-    margin-top: 20px; /* Adjust based on your navbar height */
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 18px;
 }
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 
 
 
@@ -74,15 +101,26 @@
     margin: 50px 0px 50px 0px;
 }
 .category-item .card{
+    width: 17rem;
     border-radius: 25px;
     border: none;
     cursor: pointer;
 }
+.category-item .card img{
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
+
 .category-item-name{
     color: black;
     text-align: center;
     font-weight: bold;
     margin-top: -40px;
+    font-size: 20px;
 }
 .category-link{
     text-decoration: none;
@@ -174,6 +212,16 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .modal .details-box #modal-product-stock{
+    font-size: 20px;
+    color: rgb(255, 0, 89);
+    font-weight: 600;
+  }
+  
+  .modal .details-box #modalProductPrice{
+    font-size: 40px;
+   
+  }
   
   .modal .inputs td input {
     height: 30px;
@@ -203,6 +251,25 @@
     background-color: darkgreen;
   }
 
+
+ .testimonial-section .card-text{
+    max-height: 120px;
+    overflow-y: auto;
+  }
+  .testimonial-section img{
+    width: 80px;
+  }
+  .testimonial-section .card{
+    border-radius: 15px;
+  }
+  .testimonial-section button{
+    margin: 50px auto !important;
+    background-color: #286d34 ;
+    border: none;
+  }
+  .testimonial-section button:hover{
+    background-color: #285830 ;
+  }
 
 
 /* footer-section css  */

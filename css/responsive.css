@@ -1,34 +1,82 @@
-@media (min-width: 768px) {
-    .custom-carousel .carousel-inner {
-        height: auto;
-    }
+@media (max-width:1200px) {
+  .category-item .card{
+    width: 200px;
+    height: 200px;
+  }
 
-    .custom-carousel .carousel-item img {
-        height: auto;
-    }
+  .category-item .card img{
+    height: 150px;
+    width: 150px;
+  }
+
 
 }
+@media (max-width: 991px) {
+  .category-item .card{
+    width: 300px;
+    height: 200px;
+  }
+
+}
+
+
+
 @media (max-width: 768px) {
-    .custom-carousel .carousel-inner {
-        height: 300px;
+  .prev, .next {
+    font-size: 14px;
+    padding: 8px;
+}
+
+    .category-item .card{
+      width: 250px;
+      height: 200px;
     }
-
-    .custom-carousel .carousel-item img {
-        height: 300px;
-    }
+}
 
 
+
+
+@media (max-width: 580px) {
+
+  .category-item .card{
+    width: 200px;
+    height: 200px;
+  }
+  .category-item .card img{
+    height: 150px;
+    width: 150px;
+  }
+
+  
 
 }
 @media (max-width: 480px) {
-    .custom-carousel .carousel-inner {
-        height: 200px;
-    }
 
-    .custom-carousel .carousel-item img {
-        height: 200px;
-        
+  .prev, .next {
+    font-size: 12px;
+    padding: 6px;
+}
+
+    .category-item .card{
+      width: 170px;
+      height: 170px;
     }
+    
+  .category-item .card img{
+    height: 130px;
+    width: 130px;
+  }
+
+  .category-item-name{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -40px;
+    font-size: 15px;
+}
+  
+
+
 
     .modal .main-image-box{
         height: 300px;
@@ -47,4 +95,37 @@
         border: 1px solid #286d34;
         border-radius: 5px;
       }
+
+      .modal .details-box #modalProductPrice{
+        font-size: 40px;
+       
+      }
+
+      .modal .details-box #modalProductPrice{
+        font-size: 40px;
+       
+      }
+
+      .testimonial-section .card-text{
+        font-size: 10px;
+      }
+      .testimonial-section .card-title{
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .testimonial-section .card-body img{
+        width: 50px;
+      }
+      .testimonial-section .card-text{
+        max-height: 100px;
+        overflow-y: auto;
+      }
+}
+
+
+@media (max-width: 380px) {
+  .category-item .card{
+    width: 150px;
+    height: 160px;
+  }
 }
