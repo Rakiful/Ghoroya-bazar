@@ -3,6 +3,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root{
+  --main-color: #165C07;
+  --text-color: #000000;
+  --second-color: #e4e4e4;
+  --other-color: #c6c9d8bf;
+}
+
+
 /* All common code  */
 .section-title{
   margin-top: 50px;
@@ -11,7 +19,7 @@
     width: 150px !important;
     border: 0 !important;
     outline: 0 !important;
-    border: 3px solid red !important;
+    border: 3px solid var(--main-color) !important;
     background-color: none !important;
     height: 3px !important;
     margin: auto;
@@ -22,7 +30,7 @@
 /* Nabvar-section code  */
 
 .navbar{
-  background-color: #f7ac93 !important;
+  background-color: var(--second-color) !important;
 }
 .website-logo img{
     width: 100px;
@@ -153,15 +161,15 @@
   }
   
   .close-button {
-    color: #aaa;
+    color: #f60808;
     float: right;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
   }
   
   .close-button:hover,
   .close-button:focus {
-    color: #286d34;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
   }
@@ -231,7 +239,7 @@
     padding: 5px;
   }
   .modal .inputs td select {
-    height: 30px;
+    height: 35px;
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -242,7 +250,7 @@
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
-    background-color: #286d34;
+    background-color: var(--main-color);
     color: white;
     margin-top: 14px;
     cursor: pointer;
@@ -264,7 +272,7 @@
   }
   .testimonial-section button{
     margin: 50px auto !important;
-    background-color: #286d34 ;
+    background-color: var(--main-color) ;
     border: none;
   }
   .testimonial-section button:hover{

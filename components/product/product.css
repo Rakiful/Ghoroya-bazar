@@ -1,4 +1,9 @@
-
+:root{
+    --main-color: #165C07;
+    --second-color: #e4e4e4;
+    --text-color: #000000;
+    --other-color: #c6c9d8bf;
+  }
 .product-card img {
     object-fit: cover;
     aspect-ratio: 1/1; /* Ensures 1:1 aspect ratio */
@@ -53,7 +58,7 @@
 }
 
 .product-card .card-text::-webkit-scrollbar-thumb {
-    background-color: #007bff; /* Scrollbar thumb color */
+    background-color: var(--main-color); /* Scrollbar thumb color */
     border-radius: 10px;
 }
 
@@ -63,7 +68,7 @@
 
 /* Firefox */
 .product-card .card-text {
-    scrollbar-color: #007bff #f1f1f1; /* thumb color track color */
+    scrollbar-color: var(--main-color) #f1f1f1; /* thumb color track color */
     scrollbar-width: thin; /* Options: auto, thin */
 }
 
@@ -73,7 +78,7 @@
 }
 
 .order-btn{
-    background-color: #165c07;
+    background-color: var(--main-color);
     border: none;
     border-radius: 5px;
     color: white;
@@ -122,7 +127,7 @@
     }
 
     .order-btn{
-        background-color: #165c07;
+        background-color: var(--main-color);
         border: none;
         border-radius: 5px;
         color: white;

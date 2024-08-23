@@ -133,7 +133,7 @@
             <div class="card shadow" >
               <img src="asserts/img/fruit-category.jpg" class="card-img-top" alt="Image Description">
               <div class="card-body">
-                  <p class="card-text category-item-name">Fruit item</p>
+                  <p class="card-text category-item-name">Fruit's item</p>
               </div>
             </div>
           </a>
@@ -329,7 +329,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star dark-gray-star"></i>
                 </div>
-                <p class="card-text">This is a great product that you will love. It comes with all the features you need.</p>
+                <p class="card-text">This is a great product that you lorem100 will love. It comes with all the features you need.</p>
                 <button class="order-btn">Order Now</button>
               </div>
             </div>
@@ -475,13 +475,13 @@
               <span class="old-price">৫০০৳</span>
               <span id="produc-new-price" class="new-price">350</span>
             </div>
-            <div id="modal-rating-box" class="rating mb-2">
+            <!-- <div id="modal-rating-box" class="rating mb-2">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-            </div>
+            </div> -->
             <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="c5b1208c-9e70-4659-bcb0-900e74136798">
               <table cellspacing="0" class="inputs">
@@ -491,8 +491,26 @@
                 </tr>
                 <tr>
                   <td>Quantity</td>
-                  <td align="right"><input name="Quantity" type="number" id="modalQuantity" required></td>
+                  <td align="right">
+                    <select name="Quantity" id="modalQuantity" required>
+                      <option value="" disabled selected>-- Select Quantity --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </td>
                 </tr>
+                <!-- <tr>
+                  <td>Quantity</td>
+                  <td align="right"><input name="Quantity" type="number" id="modalQuantity" required></td>
+                </tr> -->
                 <tr>
                   <td>Sub Total</td>
                   <td align="right"><input name="Sub Total" type="number" id="modalSubTotal" readonly></td>
@@ -536,7 +554,7 @@
                   <td align="right"><input name="Your Contact No" type="number" id="" required></td>
                 </tr>
               </table>
-              <h4>Specifications</h4>
+              <h4>Description</h4>
               <p id="modalProductDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, similique assumenda! Perferendis commodi qui minus error ratione, facilis, neque omnis quibusdam doloribus laboriosam obcaecati autem eveniet consequuntur voluptate, cumque reiciendis !</p>
               <button type="submit">Confirm Order</button>
             </form>
