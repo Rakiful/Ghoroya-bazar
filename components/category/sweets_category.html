@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ঘরোয়া বাজার</title>
 
-    <!-- Custom CSS link -->
+    <!-- Custom CSS link  -->
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../../components/product/product.css">
 
-    <!-- Google Fonts link -->
+    <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Tiro+Bangla:wght@400;700&display=swap" rel="stylesheet">
@@ -22,174 +22,271 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Navbar code start -->
+  
+
+    <!--======================================= Navbar code start ===================================  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="website-logo">
-                <a href="../../index.html"><img src="../../asserts/img/Sweets.jpg" alt="logo"></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../pages/shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Sweets</a></li>
-                            <li><a class="dropdown-item" href="organic_category.html">Organic</a></li>
-                            <li><a class="dropdown-item" href="baby's_category.html">Baby's food</a></li>
-                            <li><a class="dropdown-item" href="fruits_category.html">Fruits</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../pages/about.html">About</a>
-                    </li>
+           <div class="website-logo">
+            <a href="../../index.html"><img src="../../asserts/img/Sweets.jpg" alt="logo"></a>
+           </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/shop.html">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Sweets</a></li>
+                  <li><a class="dropdown-item" href="organic_category.html">Organic</a></li>
+                  <li><a class="dropdown-item" href="baby's_category.html">Baby's food</a></li>
+                  <li><a class="dropdown-item" href="fruits_category.html">Fruits</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                 </ul>
-                <div class="icons">
-                    <a href="#"><img src="../../asserts/img/fb-icon.png" alt=""></a>
-                    <a href="#"><img src="../../asserts/img/wp-icon.png" alt=""></a>
-                    <a href="#"><img src="../../asserts/img/tg-icon.png" alt=""></a>
-                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/about.html">About</a> <!--tabindex="-1" aria-disabled="true" -->
+              </li>
+            </ul>
+            <div class="icons">
+              <a href=""><img src="../../asserts/img/fb-icon.png" alt=""></a>
+              <a href=""><img src="../../asserts/img/wp-icon.png" alt=""></a>
+              <a href=""><img src="../../asserts/img/tg-icon.png" alt=""></a>
             </div>
+          </div>
         </div>
     </nav>
-    <!-- Navbar code End -->
+    <!--======================================= Navbar code End ===================================  -->
 
-    <!--Category Products section start -->
+    
+    
+    
+    <!--======================================= All products code start ==================================-->
     <section class="product-section">
-        <div class="container">
-            <div class="section-title">
-                <h1 class="text-center">Sweets Category Products</h1>
-                <hr>
-            </div>
-            <div class="row">
-                <!-- Single product -->
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6 card product-card">
-                    <div class="product-box shadow-sm">
-                        <img src="../../components/product/product-item/mix-fruits/mix-fruits.jpg" class="card-img-top d-flex mx-auto" id="card-img-top" alt="Product Image">
-                        <div class="card-body text-center">
-                            <h3 class="product-name" id="product-name">Thai mix fruits</h3>
-                            <div id="pricing" class="pricing mb-2">
-                                <span class="old-price">799৳</span>
-                                <span class="new-price">599৳</span>
-                            </div>
-                            <div id="rating-box" class="rating mb-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="dark-gray-star fas fa-star"></i>
-                                <i class="dark-gray-star fas fa-star"></i>
-                            </div>
-                            <p class="card-text">This is a great product that you will love. It comes with all the features you need.</p>
-                            <button class="order-btn">Order Now</button>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 id="prodact-stock" class="product-stock">Its Available</h1>
-                    </div>
-                    <div>
-                        <img src="../../components/product/product-item/mix-fruits/mix-fruits.jpg" id="img-1" class="product-ex-img" alt="">
-                        <img src="../../components/product/product-item/mix-fruits/mix-fruits-1.jpeg" id="img-1" class="product-ex-img" alt="">
-                        <img src="../../components/product/product-item/mix-fruits/mix-fruits-2.jpeg" id="img-1" class="product-ex-img" alt="">
-                        <img src="../../components/product/product-item/mix-fruits/mix-fruits-3.jpeg" id="img-1" class="product-ex-img" alt="">
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h1 class="text-center">Sweets Category Products</h1>
+          <hr>
         </div>
-    </section>
-    <!--Category Products section End -->
+        <div class="row">
 
-    <!-- Modal Structure for every product -->
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <div class="container d-lg-flex">
-                <div class="right-box">
-                    <div class="main-image-box">
-                        <img src="img.jpeg" id="modalMainImage" class="main-image">
-                    </div>
-                    <div class="small-images">
-                        <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
-                        <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
-                        <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
-                        <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
-                    </div>
-                </div>
-                <div class="details-box">
-                    <h1 id="modalProductName">Here is the Single Product Name and Information</h1>
-                    <p id="modal-product-stock">Availability (In Stock)</p>
-                    <div id="modalProductPrice">
-                        <span class="old-price">৫০০৳</span>
-                        <span id="produc-new-price" class="new-price">350৳</span>
-                    </div>
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="c5b1208c-9e70-4659-bcb0-900e74136798">
-                        <table cellspacing="0" class="inputs">
-                            <tr>
-                                <td>Product you want</td>
-                                <td align="right"><input name="Product you want" type="text" id="getProductName" readonly></td>
-                            </tr>
-                            <tr>
-                                <td>Quantity</td>
-                                <td align="right"><input name="Quantity" type="number" id="modalQuantity" required></td>
-                            </tr>
-                            <tr>
-                                <td>Sub Total</td>
-                                <td align="right"><input name="Sub Total" type="number" id="modalSubTotal" readonly></td>
-                            </tr>
-                            <tr>
-                                <td>Sales Tax 0%</td>
-                                <td align="right"><input name="Sales Tax 0%" type="number" id="modalSalesTax" readonly></td>
-                            </tr>
-                            <tr>
-                                <td>Your Area</td>
-                                <td align="right">
-                                    <select name="Your city" id="" required>
-                                        <option value="" disabled selected hidden>-- Select Your City --</option>
-                                        <option value="Dhaka">Dhaka</option>
-                                        <option value="Chattogram">Chattogram</option>
-                                        <option value="Sylhet">Sylhet</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Delivery Charge</td>
-                                <td align="right"><input name="Delivery Charge" type="number" id="modalDeliveryCharge" readonly></td>
-                            </tr>
-                            <tr>
-                                <td>Total Amount</td>
-                                <td align="right"><input name="Total Amount" type="number" id="modalTotalAmount" readonly></td>
-                            </tr>
-                            <tr>
-                                <td>Discount Amount</td>
-                                <td align="right"><input name="Discount Amount" type="number" id="getDiscount" readonly></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td align="right">
-                                    <input type="submit" value="Confirm Order">
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
+        
+        
+          <!-- Single product  -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 card product-card">
+          <div class="product-box shadow-sm">
+            <img src="../../components/product/product-item/mix-fruits/mix-fruits.jpg" class="card-img-top d-flex mx-auto" id="card-img-top" alt="Product Image">
+            <div class="card-body text-center">
+              <h3 class="product-name" id="product-name">Thai mix fruits</h3>
+              <div id="pricing" class="pricing mb-2">
+                <span class="old-price">799৳</span>
+                <span class="new-price">599৳</span>
+              </div>
+              <div id="rating-box" class="rating mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="dark-gray-star fas fa-star"></i>
+                <i class="dark-gray-star fas fa-star"></i>
+              </div>
+              <p class="card-text">This is a great product that you will love. It comes with all the features you need.</p>
+              <button class="order-btn">Order Now</button>
             </div>
+          </div>
+          <div>
+            <h1 id="prodact-stock" class="product-stock">Its Avalable</h1>
+          </div>
+          <div>
+            <img src="../../components/product/product-item/mix-fruits/mix-fruits.jpg" id="img-1" class="product-ex-img" alt="">
+            <img src="../../components/product/product-item/mix-fruits/mix-fruits-1.jpeg" id="img-1" class="product-ex-img" alt="">
+            <img src="../../components/product/product-item/mix-fruits/mix-fruits-2.jpeg" id="img-1" class="product-ex-img" alt="">
+            <img src="../../components/product/product-item/mix-fruits/mix-fruits-3.jpeg" id="img-1" class="product-ex-img" alt="">
+          </div>
+          </div>
+       
+
+        
+
+         
+      
+      
+      
         </div>
+      </div>
+    </section>
+    <!--======================================= New Arrivels code End =========================================-->
+
+
+    <!--======================================= code start =======================================-->
+    
+    <!--======================================= code End =========================================-->
+    <!--======================================= code start =======================================-->
+    
+    <!--======================================= code End =========================================-->
+
+
+    <!-- Modal Structure for every product-->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="container d-lg-flex">
+          <div class="right-box">
+            <div class="main-image-box">
+              <img src="img.jpeg" id="modalMainImage" class="main-image">
+            </div>
+            <div class="small-images">
+              <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
+              <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
+              <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
+              <div class="image-box"><img src="asserts/img/product.jpg" class="image"></div>
+            </div>
+          </div>
+          <div class="details-box">
+            <h1 id="modalProductName">Here is the Single Product Name and Information</h1>
+            <p id="modal-product-stock">Availability (In Stock)</p>
+            <div id="modalProductPrice">
+              <span class="old-price">৫০০৳</span>
+              <span id="produc-new-price" class="new-price">350</span>
+            </div>
+            <!-- <div id="modal-rating-box" class="rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div> -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="c5b1208c-9e70-4659-bcb0-900e74136798">
+              <table cellspacing="0" class="inputs">
+                <tr>
+                  <td>Product you want</td>
+                  <td align="right"><input name="Product you want" type="text" id="getProductName" readonly></td>
+                </tr>
+                <tr>
+                  <td>Quantity</td>
+                  <td align="right"><input name="Quantity" type="number" id="modalQuantity" required></td>
+                </tr>
+                <tr>
+                  <td>Sub Total</td>
+                  <td align="right"><input name="Sub Total" type="number" id="modalSubTotal" readonly></td>
+                </tr>
+                <tr>
+                  <td>Sales Tax 0%</td>
+                  <td align="right"><input name="Sales Tax 0%" type="number" id="modalSalesTax" readonly></td>
+                </tr>
+                <tr>
+                  <td>Your Area</td>
+                  <td align="right">
+                    <select name="Your city" id="" required>
+                      <option value="" disabled selected>-- Select Your City --</option>
+                      <option value="in Chittagong">in Chittagong</option>
+                      <option value="Out of Chittagong">Out of Chittagong</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Delevery Charge</td>
+                  <td align="right"><input name="Delevery Charge" type="number" id="getDeleveryCharge" readonly></td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td align="right"><input name="Total" type="number" id="modalTotal" readonly></td>
+                </tr>
+                <tr>
+                  <td>Your Name</td>
+                  <td align="right"><input name="Your Name" type="text" id="" required></td>
+                </tr>
+                <tr>
+                  <td>Your Full Address</td>
+                  <td align="right"><input name="Your Full Address" type="text" id="" required></td>
+                </tr>
+                <tr>
+                  <td>Your Email</td>
+                  <td align="right"><input name="Your Email" type="email" id="" required></td>
+                </tr>
+                <tr>
+                  <td>Your Contact No</td>
+                  <td align="right"><input name="Your Contact No" type="number" id="" required></td>
+                </tr>
+              </table>
+              <h4>Description</h4>
+              <p id="modalProductDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, similique assumenda! Perferendis commodi qui minus error ratione, facilis, neque omnis quibusdam doloribus laboriosam obcaecati autem eveniet consequuntur voluptate, cumque reiciendis !</p>
+              <button type="submit">Confirm Order</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- Modal Structure End-->
+    
+    <!--======================================= footer section code start =======================================-->
+    <footer class="footer-section">
+      <div class="container fd-footer">
+        <div class="footer-section-content row">
+          <div class="footer-first-content col-lg-4 col-md-6 col-sm-6 col-12">
+            <a href=""><h2>Ghorer bajar</h2></a>
+            <div>
+              <form class="subscriber-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c5b1208c-9e70-4659-bcb0-900e74136798">
+                <input class="mt-3" name="Subscriber Email :-" type="email" placeholder="Your Email Address" required>
+                <button class="btn btn-primary">Subscribe</button>
+            </form>
+            </div>
+            <div class="mt-2 mb-5">
+              <a href=""><img class="mt-3" src="../../asserts/img/play.png" alt=""></a>
+              <a href=""><img class="mt-3" src="../../asserts/img/app.png" alt=""></a>
+            </div>
+          </div>
+          <div class="footer-second-content col-lg-4 col-md-6 col-sm-6 col-12">
+            <h1>Pages</h1>
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../pages/shop.html">Shop</a></li>
+              <li><a href="../../pages/about.html">About</a></li>
+              <li><a href="https://rakif.netlify.app/" target="_blank">Developer portfolio</a></li>
+            </ul>
+  
+          </div>
+          <div class="footer-third-content col-lg-4 col-md-6 col-sm-6 col-12">
+            <h1>Contact Info</h1>
+            <h3>Address:</h3>
+            <p>৪১৮/৩ এম.কে. হাইটস, খাতুনগঞ্জ, থানা- কোতোয়ালী, জেলা- চট্টগ্রাম।</p>
+            <h3>Phone:</h3>
+            <p>01886-701 503</p>
+            <h3>Email:</h3>
+            <p>tawakkul5758@gmail.com</p>
+            <div class="icons">
+              <a href=""><img src="../../asserts/img/fb-icon.png" alt=""></a>
+              <a href=""><img src="../../asserts/img/wp-icon.png" alt=""></a>
+              <a href=""><img src="../../asserts/img/tg-icon.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <!--======================================= footer section code End =========================================-->
+    
+
+    <!-- Custom JS link -->
+     <script src="../../js/script.js"></script>
+    <script src="../../js/product_modal.js"></script>
+    <script src="../../js/footer.js"></script>
 
     <!-- Bootstrap JS CDN Link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-c1CToMWJPR7Xox5EXGsl7MdP6FbJ6RbS5bW8S1ZQOrjWbK0NPEgkAi9V8URJ3m6m" crossorigin="anonymous"></script>
-    
-    <!-- Custom JS -->
-    <script src="../../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
