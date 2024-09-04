@@ -115,8 +115,8 @@
     cursor: pointer;
 }
 .category-item .card img{
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   padding: 30px;
   border-radius: 50%;
   display: flex;
