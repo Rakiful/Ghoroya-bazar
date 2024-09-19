@@ -150,16 +150,38 @@ document.getElementById("modalQuantity").addEventListener('keyup', () => {
 
 
 
-document.getElementById('fbShareButton').addEventListener('click', function () {
-    // Get the product card content dynamically
-    const cardImage = document.querySelector('.product-card .card-img-top').src; // Product card image
-    const cardProductName = document.querySelector('.product-card .product-name').innerText; // Product name
-    const pageUrl = window.location.href; // Current URL of the page
+// document.getElementById('fbShareButton').addEventListener('click', function () {
+//     // Get the product card content dynamically
+//     const cardImage = document.querySelector('.product-card .card-img-top').src; // Product card image
+//     const cardProductName = document.querySelector('.product-card .product-name').innerText; // Product name
+//     const pageUrl = window.location.href; // Current URL of the page
 
-    // Create Facebook Share URL
-    const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}&quote=${encodeURIComponent(cardProductName)}&picture=${encodeURIComponent(cardImage)}`;
+//     // Create Facebook Share URL
+//     const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}&quote=${encodeURIComponent(cardProductName)}&picture=${encodeURIComponent(cardImage)}`;
 
-    // Open the Facebook share dialog in a new window
+//     // Open the Facebook share dialog in a new window
+//     window.open(fbShareUrl, '_blank', 'width=600,height=400');
+// });
+
+function shareOnFacebook(buttonElement) {
+    // Get the product card that contains the clicked button
+    const productCard = buttonElement.closest('.product-card');
+  
+    // Extract product details from the card
+    const productName = productCard.querySelector('.product-name').innerText;
+    const productImage = productCard.querySelector('.card-img-top').src;
+    const productDescription = productCard.querySelector('.card-text').innerText;
+  
+    // Update Open Graph meta tags dynamically
+    document.querySelector('meta[property="og:title"]').setAttribute("content", productName);
+    document.querySelector('meta[property="og:description"]').setAttribute("content", productDescription);
+    document.querySelector('meta[property="og:image"]').setAttribute("content", productImage);
+    document.querySelector('meta[property="og:url"]').setAttribute("content", window.location.href);
+  
+    // Generate Facebook share URL
+    const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+  
+    // Open Facebook share dialog
     window.open(fbShareUrl, '_blank', 'width=600,height=400');
-});
-
+  }
+  
