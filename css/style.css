@@ -26,6 +26,24 @@
     margin-bottom: 50px; 
 }
 
+.share-option{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.share-option p{
+  font-size: 30px;
+  font-weight: 600;
+}
+#fbShareButton{
+  width: 70px;
+  cursor: pointer;
+}
+
+
 
 /* Nabvar-section code  */
 

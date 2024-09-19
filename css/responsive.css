@@ -31,6 +31,15 @@
       width: 250px;
       height: 200px;
     }
+
+    .share-option{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 50px;
+    }
 }
 
 
@@ -46,6 +55,25 @@
     height: 150px;
     width: 150px;
   }
+
+  .share-option{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 70px;
+  }
+  .share-option p{
+    font-size: 15px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  #fbShareButton{
+    width: 50px;
+  }
+  
 
   
 
@@ -123,5 +151,17 @@
   .category-item .card{
     width: 150px;
     height: 160px;
+  }
+
+  .share-option{
+    margin: 0;
+  }
+  .share-option p{
+    font-size: 12px;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  #fbShareButton{
+    width: 40px;
   }
 }
