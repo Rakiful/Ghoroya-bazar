@@ -1,0 +1,35 @@
+.admin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.admin-profile img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.admin-profile h1{
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.controll-item{
+    margin-top: 30px;
+}
+.controll-btn{
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+.controll-btn i{
+    margin-right: 10px;
+}

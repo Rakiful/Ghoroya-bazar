@@ -1,5 +1,5 @@
 :root{
-    --main-color: #165C07;
+    --main-color: #03aefd;
     --second-color: #e4e4e4;
     --text-color: #000000;
     --other-color: #c6c9d8bf;
@@ -81,7 +81,7 @@
     background-color: var(--main-color);
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 5px;
     
@@ -130,7 +130,6 @@
         background-color: var(--main-color);
         border: none;
         border-radius: 5px;
-        color: white;
         font-weight: bold;
         padding: 5px;
         width: 100px;
