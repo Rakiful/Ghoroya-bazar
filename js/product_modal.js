@@ -134,18 +134,32 @@ document.getElementById("modalQuantity").addEventListener('keyup', () => {
 });
 
 
-//facebook Share
+// //facebook Share
+// document.getElementById('fbShareButton').addEventListener('click', function () {
+//     // Get the modal content dynamically
+//     const modalImage = document.getElementById('modalMainImage').src; // Modal main image
+//     const modalProductName = document.getElementById('modalProductName').innerText; // Modal product name (caption)
+//     const modalUrl = window.location.href; // Current URL (with modal open)
+
+//     // Create Facebook Share URL
+//     const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(modalUrl)}&quote=${encodeURIComponent(modalProductName)}&picture=${encodeURIComponent(modalImage)}`;
+
+//     // Open the Facebook share dialog in a new window
+//     window.open(fbShareUrl, '_blank', 'width=600,height=400');
+// });
+
+
+
 document.getElementById('fbShareButton').addEventListener('click', function () {
-    // Get the modal content dynamically
-    const modalImage = document.getElementById('modalMainImage').src; // Modal main image
-    const modalProductName = document.getElementById('modalProductName').innerText; // Modal product name (caption)
-    const modalUrl = window.location.href; // Current URL (with modal open)
+    // Get the product card content dynamically
+    const cardImage = document.querySelector('.product-card .card-img-top').src; // Product card image
+    const cardProductName = document.querySelector('.product-card .product-name').innerText; // Product name
+    const pageUrl = window.location.href; // Current URL of the page
 
     // Create Facebook Share URL
-    const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(modalUrl)}&quote=${encodeURIComponent(modalProductName)}&picture=${encodeURIComponent(modalImage)}`;
+    const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}&quote=${encodeURIComponent(cardProductName)}&picture=${encodeURIComponent(cardImage)}`;
 
     // Open the Facebook share dialog in a new window
     window.open(fbShareUrl, '_blank', 'width=600,height=400');
 });
-
 
