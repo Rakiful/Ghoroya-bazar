@@ -18,6 +18,7 @@ adminLoginForm.addEventListener("submit",function(){
     
     // clear all error
     document.getElementById("usernameError").innerText="";
+    
     document.getElementById("passError").innerText="";
 
     // Set All Error
