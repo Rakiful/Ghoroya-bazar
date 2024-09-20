@@ -3,16 +3,51 @@ function updateAlert(){
 };
 
 
-//facebook Share
-document.getElementById('fbShareButton').addEventListener('click', function () {
-    // Get the modal content dynamically
-    const modalImage = document.getElementById('modalMainImage').src; // Modal main image
-    const modalProductName = document.getElementById('modalProductName').innerText; // Modal product name (caption)
-    const modalUrl = window.location.href; // Current URL (with modal open)
+//Admin login method
+const adminLoginForm = document.getElementById('admin-login-form');
 
-    // Create Facebook Share URL
-    const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(modalUrl)}&quote=${encodeURIComponent(modalProductName)}&picture=${encodeURIComponent(modalImage)}`;
+adminLoginForm.addEventListener("submit",function(){
+    event.preventDefault();
 
-    // Open the Facebook share dialog in a new window
-    window.open(fbShareUrl, '_blank');
+    let hasError = false ;
+
+    // Get all input Values
+    const username = document.getElementById('admin-username').value;
+    const password = document.getElementById('admin-password').value;
+
+    
+    // clear all error
+    document.getElementById("usernameError").innerText="";
+    document.getElementById("passError").innerText="";
+
+    // Set All Error
+    if (username === ""){
+        document.getElementById("usernameError").innerText="Username is Requred";
+        hasError = true;
+    }
+    if (password === ""){
+        document.getElementById("passError").innerText="Password is Requred";
+        hasError = true ;
+    }
+    
+    const realUsername = "arif";
+    const realPassword = "aharon@shop";
+
+    if(!hasError){
+        if (username === realUsername & password === realPassword){
+            document.querySelector(".admin-panel-login").style.display="none"
+            document.querySelector(".admin-panel").style.display="block"
+            alert("Login Sucessfull");
+        }else if(username === realUsername & password !== realPassword){
+            document.getElementById("passError").innerText="Invalid Password";
+        }else{
+            document.getElementById("usernameError").innerText="Invalid Username";
+            document.getElementById("passError").innerText="Invalid Password";
+        }
+    }
+
 });
+
+// function loginSubmit(){
+    
+// }
