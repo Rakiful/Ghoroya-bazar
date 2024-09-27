@@ -1,3 +1,4 @@
+
 // Function to open modal and update content
 function openModal(productCard) {
     const modal = document.getElementById('productModal');
@@ -133,6 +134,13 @@ document.getElementById("modalQuantity").addEventListener('keyup', () => {
     updateCart(getProductPrice());
 });
 
+
+const productCards = document.querySelectorAll('.product-card');
+productCards.forEach(card => {
+    card.addEventListener("click", function() {
+        openModal(card);
+    });
+});
 
 
 

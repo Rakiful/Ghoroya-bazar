@@ -69,7 +69,67 @@
     </nav>
     <!--======================================= Navbar code End ===================================  -->
 
-    
+    <!-- search code start -->
+    <section class="serch-section">
+      <div class="container mt-5">
+        <div>
+          <input type="text" id="searchInput" class="py-2 px-3 me-2" placeholder="Search our product">
+          <button class="py-2 px-3" onclick="highlightText()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p class="d-none unfind-error"> <span>দুঃখিত পণ্যটি খুঁজে পাওয়া যায়নি । </span> আপনার খুঁজে না পাওয়া পণ্যটি যদি আপনি ইংরেজিতে লিখে সার্চ করেন, তাহলে আরো একবার বাংলাতে লিখে চেষ্টা করতে পারেন । অথবা আপনি হয়তো ভুল ক্যাটেগরি পেজে আছেন । সে ক্ষেত্রে আপনি অন্য ক্যাটাগরি পেজে আপনার পণ্যটি খুঁজে দেখতে পারেন ।</p>
+        <div>
+          <div id="category-list" class="category-list row d-none">
+            <div class="category-title">
+              <h1 class="text-center">Product category</h1>
+              <hr>
+            </div>
+            <div class="category-item d-flex col-lg-3 col-md-6 col-sm-6 col-6 mb-4 justify-content-center ">
+              <a class="category-link" href="sweets_category.html">
+                <div class="card shadow">
+                  <img src="../../asserts/img//Sweets-category.jpg" class="card-img-top" alt="Image Description">
+                  <div class="card-body">
+                      <p class="card-text category-item-name">Sweets</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="category-item d-flex col-lg-3 col-md-6 col-sm-6 col-6 mb-4 justify-content-center ">
+              <a class="category-link" href="organic_category.html">
+                <div class="card shadow" >
+                  <img src="../../asserts/img/organic-category.jpg" class="card-img-top" alt="Image Description">
+                  <div class="card-body">
+                      <p class="card-text category-item-name">Organic</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="category-item d-flex col-lg-3 col-md-6 col-sm-6 col-6 mb-4 justify-content-center ">
+              <a class="category-link" href="fruits_category.html">
+                <div class="card shadow" >
+                  <img src="../../asserts/img/fruit-category.jpg" class="card-img-top" alt="Image Description">
+                  <div class="card-body">
+                      <p class="card-text category-item-name">Fruit's item</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="category-item d-flex col-lg-3 col-md-6 col-sm-6 col-6 mb-4 justify-content-center ">
+              <a class="category-link" href="baby's_category.html">
+                <div class="card shadow" >
+                  <img src="../../asserts/img/baby-category.jpg" class="card-img-top" alt="Image Description">
+                  <div class="card-body">
+                      <p class="card-text category-item-name">Baby's food</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+          
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- search code end -->
     
     
     <!--======================================= All products code start ==================================-->
@@ -114,37 +174,7 @@
             <img src="" id="img-1" class="product-ex-img" alt="">
           </div>
         </div>
-          <!-- Single product  -->
-          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3 card product-card">
-          <div class="product-box shadow-sm">
-            <img src="../../components/product/product-item/aprikot/aprikot.jpg" class="card-img-top d-flex mx-auto" id="card-img-top" alt="Product Image">
-            <div class="card-body text-center">
-              <h3 class="product-name" id="product-name">Aprikot</h3>
-              <div id="pricing" class="pricing mb-2">
-                <span class="old-price">1500৳</span>
-                <span class="new-price">1250৳</span>
-              </div>
-              <div id="rating-box" class="rating mb-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star dark-gray-star"></i>
-              </div>
-              <p class="card-text">This is a great product that you will love. It comes with all the features you need.</p>
-              <button class="order-btn">Order Now</button>
-            </div>
-          </div>
-          <div>
-            <h1 id="prodact-stock" class="product-stock">not avalable</h1>
-          </div>
-          <div>
-            <img src="../../components/product/product-item/aprikot/aprikot.jpg" id="img-1" class="product-ex-img" alt="">
-            <img src="" id="img-1" class="product-ex-img" alt="">
-            <img src="" id="img-1" class="product-ex-img" alt="">
-            <img src="" id="img-1" class="product-ex-img" alt="">
-          </div>
-          </div>
+        
        
 
         
@@ -162,13 +192,6 @@
     </section>
     <!--======================================= All product code End =========================================-->
 
-
-    <!--======================================= code start =======================================-->
-    
-    <!--======================================= code End =========================================-->
-    <!--======================================= code start =======================================-->
-    
-    <!--======================================= code End =========================================-->
 
 
     <!--Product Modal Structure for every product-->

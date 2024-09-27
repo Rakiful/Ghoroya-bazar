@@ -25,6 +25,19 @@
     margin: auto;
     margin-bottom: 50px; 
 }
+.category-title{
+  margin-top: 50px;
+}
+.category-title hr{
+    width: 150px !important;
+    border: 0 !important;
+    outline: 0 !important;
+    border: 3px solid var(--main-color) !important;
+    background-color: none !important;
+    height: 3px !important;
+    margin: auto;
+    margin-bottom: 50px; 
+}
 
 .share-option{
   display: flex;
@@ -269,7 +282,7 @@
     border-radius: 5px;
     padding: 10px 15px;
     background-color: var(--main-color);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     margin-top: 14px;
     cursor: pointer;
@@ -352,4 +365,38 @@
 }
 .subscriber-form input{
   padding: 5px 20px;
+}
+
+.highlight {
+  background-color: yellow;
+  color: black;
+}
+
+.serch-section {
+  margin-bottom: 50px;
+}
+.serch-section input{
+  border: 2px solid var(--main-color);
+}
+.serch-section button{
+  border: 2px solid var(--main-color);
+}
+.serch-section i{
+  color: var(--main-color);
+  font-weight: 900;
+}
+.serch-section .unfind-error{
+ color: red;
+ font-weight: bold;
+ margin-top: 30px;
+ font-size: 20px;
+ text-align: center;
+}
+.serch-section .unfind-error span{
+ color: red;
+ font-weight: bold;
+ margin-bottom: 20px;
+ font-size: 40px;
+ text-align: center;
+ display: block;
 }

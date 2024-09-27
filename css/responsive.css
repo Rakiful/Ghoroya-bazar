@@ -73,6 +73,26 @@
   #fbShareButton{
     width: 50px;
   }
+
+  .serch-section {
+    margin-bottom: 50px;
+  }
+  .serch-section input{
+    border: 2px solid var(--main-color);
+  }
+  .serch-section button{
+    border: 2px solid var(--main-color);
+  }
+  .serch-section i{
+    color: var(--main-color);
+    font-weight: 900;
+  }
+  .serch-section .unfind-error{
+   font-size: 15px;
+  }
+  .serch-section .unfind-error span{
+   font-size: 20px;
+  }
   
 
   
